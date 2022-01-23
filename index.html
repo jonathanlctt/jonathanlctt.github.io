@@ -14,6 +14,20 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
+  <head>
+    <script type="text/javascript" language="JavaScript">
+          num_images = 1;
+          var images = ['"jonathanlacotte.jpg"'];
+          start = '<div class="col-md-5 col-sm-5 col-xs-5"><img src=';
+          end = ' class="col-md-12 col-sm-10 col-xs-10" title="Jonathan Lacotte"/></div>';
+          
+          function printImage() {
+            var rand_int = Math.floor(Math.random() * num_images);
+            document.write(start + images[rand_int] + end);
+          }
+    </script>
+  </head>
+
   <body>
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -32,7 +46,7 @@
             <li><a href="research.html">Research</a></li>
             <li><a href="https://github.com/jonathanlctt/", target="_blank">Code</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
 
@@ -41,9 +55,14 @@
       		<h2>Jonathan Lacotte </h2>
       	</div>
       	
-      	<div class="col-md-5 col-sm-5 col-xs-5">
+        <script type="text/javascript" language="JavaScript">
+          printImage();
+        </script>
+
+      	<!--<div class="col-md-5 col-sm-5 col-xs-5">
       		<img src="jonathanlacotte.jpg" class="col-md-12 col-sm-10 col-xs-10" title="Jonathan Lacotte"/>
       	</div>
+        //-->
       
       	<div class="col-md-7 col-sm-5 col-xs-6">
     			I am a PhD student in the <a href="https://isl.stanford.edu/", target="_blank">Department of Electrical Engineering</a> at Stanford University where I am advised by <a href="https://web.stanford.edu/~pilanci", target="_blank">Mert Pilanci</a>. 
